@@ -2,7 +2,21 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-my-new-component',
-  templateUrl: './my-new-component.component.html',
+  template:`
+  	<p> Its an internal template rendering method</p>
+  	<ul>
+  		<li *ngFor="let arr of myArr">{{arr}}</li>
+  	</ul>
+  	<span *ngIf="myObject">{{myObject.name}} lives in {{myObject.location}}. Mother country is {{myObject.homeCountry}}</span><br/>
+  	<span *ngIf="myName == 'Sathya';else otherTmpl">Hey! Its me Sathya.</span>
+  	<ng-template #otherTmpl>I am not Sathya</ng-template>
+  	<br/>
+  	<div *ngIf="isTrue; then tmpl1 else tmpl2"></div>
+  	<ng-template #tmpl1>True</ng-template>
+  	<ng-template #tmpl2>False</ng-template>
+
+  `,
+  //templateUrl: './my-new-component.component.html',
   styleUrls: ['./my-new-component.component.css']
 })
 export class MyNewComponentComponent implements OnInit {
@@ -16,6 +30,15 @@ export class MyNewComponentComponent implements OnInit {
   this.sayHi();
   }
   sayHi(){
-  	console.log("Hey welcome to angular4 basics")
+  	console.log("Hey welcome to angular4 basics");
   }
+  myArr = ['him','her','them'];
+  myObject = {
+  	name: 'Sathya',
+  	age:30,
+  	location:'London',
+  	'homeCountry':'India'
+  }
+  myName='Sathya V'; //try changing me
+  isTrue=false;
 }

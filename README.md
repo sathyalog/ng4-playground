@@ -27,11 +27,13 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-##Constructor
+## Constructor
 The Constructor is a default method of the class that is executed when the class is instantiated and ensures proper initialization of fields in the class and its subclasses. This should be called before ngOnInit().
 
-##OnInit
+## OnInit
 ngOnInit is a life cycle hook called by Angular2 to indicate that Angular is done creating the component.
 
 We have to import OnInit in order to use like this (actually implementing OnInit is not mandatory but considered good practice).Mostly we use ngOnInit for all the initialization/declaration and avoid stuff to work in the constructor. The constructor should only be used to initialize class members but shouldn't do actual "work".
 
+## ngIf, ngIf-else, ngIf-then-else, ngFor, ng-templates 
+used in templates commit. Have a look.
