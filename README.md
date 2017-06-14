@@ -37,3 +37,30 @@ We have to import OnInit in order to use like this (actually implementing OnInit
 
 ## ngIf, ngIf-else, ngIf-then-else, ngFor, ng-templates 
 used in templates commit. Have a look.
+
+## event binding examples
+(focus)="myMethod()"  // An element has received focus
+(blur)="myMethod()"   // An element has lost focus
+
+(submit)="myMethod()"  // A submit button has been pressed
+
+(scroll)="myMethod()"
+
+(cut)="myMethod()"
+(copy)="myMethod()"
+(paste)="myMethod()"
+
+(keydown)="myMethod()"
+(keypress)="myMethod()"
+(keyup)="myMethod()"
+
+(mouseenter)="myMethod()"
+(mousedown)="myMethod()"
+(mouseup)="myMethod()"
+
+(click)="myMethod()"
+(dblclick)="myMethod()"
+
+(drag)="myMethod()"
+(dragover)="myMethod()"
+(drop)="myMethod()"

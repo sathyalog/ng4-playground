@@ -18,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
   	<img src={{angularLogo}}/>
   	<img [src]="angularLogo"/>
   	<img bind-src="angularLogo"/><br/><br/>
-  	<button [disabled]="btnStatus">My Button</button>
+  	<button [disabled]="btnStatus" (click)="myEvent($event)">My Button</button>
   `,
   //templateUrl: './my-new-component.component.html',
   styleUrls: ['./my-new-component.component.css']
@@ -48,4 +48,7 @@ export class MyNewComponentComponent implements OnInit {
 
   angularLogo = 'https://angular.io/assets/images/logos/angular/angular.png';
   btnStatus = false;
+  myEvent(event){
+  	console.log(event);
+  }
 }
