@@ -13,8 +13,12 @@ import { Component, OnInit } from '@angular/core';
   	<br/>
   	<div *ngIf="isTrue; then tmpl1 else tmpl2"></div>
   	<ng-template #tmpl1>True</ng-template>
-  	<ng-template #tmpl2>False</ng-template>
-
+  	<ng-template #tmpl2>False</ng-template><br/>
+  	Three type of property binding here..
+  	<img src={{angularLogo}}/>
+  	<img [src]="angularLogo"/>
+  	<img bind-src="angularLogo"/><br/><br/>
+  	<button [disabled]="btnStatus">My Button</button>
   `,
   //templateUrl: './my-new-component.component.html',
   styleUrls: ['./my-new-component.component.css']
@@ -41,4 +45,7 @@ export class MyNewComponentComponent implements OnInit {
   }
   myName='Sathya V'; //try changing me
   isTrue=false;
+
+  angularLogo = 'https://angular.io/assets/images/logos/angular/angular.png';
+  btnStatus = false;
 }
