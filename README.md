@@ -64,3 +64,6 @@ used in templates commit. Have a look.
 (drag)="myMethod()"
 (dragover)="myMethod()"
 (drop)="myMethod()"
+
+## style binding
+Used [style.color] and [ngStyle] in this commit. 

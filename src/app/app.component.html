@@ -1,4 +1,6 @@
-<h1>
+<h1 [style.color]="titleStyle">
   {{title}}
 </h1>
+<h2 [style.color]="titleStatus? 'blue':'pink'">Hello! Testing with conditional operator for color</h2>
+<h3 [ngStyle]="titleStyles">Applying a css object properties here</h3>
 <app-my-new-component></app-my-new-component>
