@@ -66,4 +66,7 @@ used in templates commit. Have a look.
 (drop)="myMethod()"
 
 ## style binding
-Used [style.color] and [ngStyle] in this commit. 
+Used [style.color] and [ngStyle] in this commit.
+
+## class binding
+Change classnames of your element on conditions and apply related class properties dynamically. Check this related commit. 
