@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { DataService } from './data.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -23,6 +23,15 @@ import { Component } from '@angular/core';
   `]
 })
 export class AppComponent {
+
+	constructor(private dataservice:DataService){
+
+	}
+	someProp:string='';
+	ngOnInit(){
+		console.log(this.dataservice.cars);
+		this.someProp = this.dataservice.myData();
+	}
   title = 'app works!';
   titleStyle = 'red';
   titleStatus = true;

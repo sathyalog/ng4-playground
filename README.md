@@ -70,3 +70,8 @@ Used [style.color] and [ngStyle] in this commit.
 
 ## class binding
 Change classnames of your element on conditions and apply related class properties dynamically. Check this related commit. 
+
+## service
+ng g service data
+see dataservice.ts file and this related commit.
+
